@@ -237,10 +237,9 @@
      background-color: #FAEBD7;
      height: 50px;
      margin-top: 20px;
- }
-
- .footer p {
-     margin-top: 40px;
+     line-height: 50px;
+     text-align: center;
+     color: #333333;
  }
 
  .containe {
