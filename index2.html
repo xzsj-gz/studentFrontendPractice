@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/kuangjia.css" />
+</head>
+
+<body>
+    <!-- 头部开始 -->
+    <div class="top">
+        <img src="img/top.jpg" align="center">
+    </div>
+    <!-- 导航栏开始 -->
+    <div class="nav">
+        <div class="logo">
+            <img src="img/王者标.jpg">
+        </div>
+        <div class="bg">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">攻略中心</a></li>
+                <li><a href="#">赛事中心</a></li>
+                <li><a href="#">IP新游</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 主页开始 -->
+    <div class="banner">
+        <!-- 这是版心 -->
+    </div>
+    <div class="content">
+        <div class="conter-left">
+            <ul>
+                <li><a dir="#">坦克></a></li>
+                <li><a dir="#">战士></a></li>
+                <li><a dir="#">刺客></a></li>
+                <li><a dir="#">法师></a></li>
+                <li><a dir="#">射手></a></li>
+                <li><a dir="#">辅助></a></li>
+            </ul>
+            <img src="">
+        </div>
+        <div class="conter-right">
+            <table width="100%" height="600" border="1" align="center">
+                <tr>
+                    <td width="100%">
+                        <marquee direction="up" scrollamount="1" onmouseover="this.stop()" onmouseout="this.start()">
+                            <table width="100%" height="600px" border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td>新闻1新闻1新闻1新闻1</td>
+                                </tr>
+                                <tr>
+                                    <td height="32"><a href="#">新闻2新闻2新闻2新闻2</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">新闻3新闻3新闻3新闻3</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">新闻4新闻4新闻4新闻4</a></td>
+                                </tr>
+                                . <tr>
+                                    <td><a href="#">新闻5新闻5新闻5新闻5</a></td>
+                                </tr>
+                            </table>
+                        </marquee>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- 精品推荐开始 -->
+    <div class="container">
+        <div class="jphd">
+            <h4>精品内容</h4>
+            <a href="#">查看更多</a>
+        </div>
+        <div class="container-bg">
+            <!-- 推荐的身体部分 -->
+            <ul>
+                <li>
+                    <img src="img/妲己0.jpg" align="center">
+                    <h5>没有心，就不会受伤</h5>
+                    <p><span>妲己</span>-------王者荣耀</p>
+                </li>
+                <li>
+                    <img src="img/timg.jpg" align="center">
+                    <h5>最有价值之物，给最珍贵之人</h5>
+                    <p><span>西施</span>-------王者荣耀</p>
+                </li>
+                <li>
+                    <img src="img/貂蝉.png" align="center">
+                    <h5> 有你的陪伴，一点都不冷哦</h5>
+                    <p><span>貂蝉</span>-------王者荣耀</p>
+                </li>
+                <li>
+                    <img src="img/杨玉环.jpg" align="center">
+                    <h5>云想衣裳花想容，春风佛槛露华浓</h5>
+                    <p><span>杨玉环</span>-------王者荣耀</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 精品推荐结束-->
+    <!-- 尾部开始 -->
+    <div class="footer">
+    </div>
+    <script>
+    const imgSrc = ['img/露娜534300.jpg', 'img/苏烈500313.jpg', 'img/孙膑533300.jpg', 'img/狂铁19201080.jpeg', 'img/兰陵王.jpg', 'img/李白960540.jpeg']
+    const mouseBox = document.querySelector('.content');
+    const ulDom = mouseBox.children[0]
+    const liList = ulDom.children
+    const imgDom = mouseBox.children[1].children[0]
+    ulDom.onmouseover = (e) => {
+        const index = [...liList].indexOf(e.target)
+        imgDom.src = imgSrc[index]
+        imgDom.style.opacity = 1
+    }
+    ulDom.onmouseout = () => {
+        imgDom.style.opacity = 0
+    }
+
+    imgDom.onmouseover = (e) => {
+        imgDom.style.opacity = 1
+    }
+
+    imgDom.onmouseout = () => {
+        imgDom.style.opacity = 0
+    }
+    </script>
+</body>
+
+</html>

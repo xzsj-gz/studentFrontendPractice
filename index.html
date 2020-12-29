@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/kua.css" />
+</head>
+
+<body>
+    <div class="top">
+        <img src="img/top.jpg" />
+    </div>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <img src="img/王者标.jpg">
+            </div>
+            <div class="nav-bg">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">攻略中心</a></li>
+                    <li><a href="#">赛事中心</a></li>
+                    <li><a href="#">IP新游</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="img/王者1200400.jpg" alt="" srcset="">
+        </div>
+        <div class="content">
+            <ul>
+                <li>坦克></li>
+                <li>战士></li>
+                <li>刺客></li>
+                <li>法师></li>
+                <li>射手></li>
+                <li>辅助></li>
+            </ul>
+            <div class="mouse">
+                <img src="img/妲己0.jpg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    <div class="containe">
+        <div class="jphd">
+            <h4>精品内容</h4>
+            <a href="#">查看更多</a>
+        </div>
+        <div class="container-bg">
+            <!-- 推荐的身体部分 -->
+            <ul>
+                <li>
+                    <div>
+                        <img src="img/妲己0.jpg" align="center">
+                        <h5>没有心，就不会受伤</h5>
+                        <p><span>妲己</span>-------王者荣耀</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/timg.jpg" align="center">
+                        <h5>最有价值之物，给最珍贵之人</h5>
+                        <p><span>西施</span>-------王者荣耀</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/貂蝉.png" align="center">
+                        <h5> 有你的陪伴，一点都不冷哦</h5>
+                        <p><span>貂蝉</span>-------王者荣耀</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/杨玉环.jpg" align="center">
+                        <h5>云想衣裳花想容，春风佛槛露华浓</h5>
+                        <p><span>杨玉环</span>-------王者荣耀</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <p align="center">31923贾倩文</p>
+    </div>
+    <script>
+    const imgSrc = ['img/露娜534300.jpg', 'img/苏烈500313.jpg', 'img/孙膑533300.jpg', 'img/狂铁19201080.jpeg', 'img/兰陵王.jpg', 'img/李白960540.jpeg']
+    const mouseBox = document.querySelector('.content');
+    const ulDom = mouseBox.children[0]
+    const liList = ulDom.children
+    const imgDom = mouseBox.children[1].children[0]
+    ulDom.onmouseover = (e) => {
+        const index = [...liList].indexOf(e.target)
+        imgDom.src = imgSrc[index]
+        imgDom.style.opacity = 1
+    }
+    ulDom.onmouseout = () => {
+        imgDom.style.opacity = 0
+    }
+
+    imgDom.onmouseover = (e) => {
+        imgDom.style.opacity = 1
+    }
+
+    imgDom.onmouseout = () => {
+        imgDom.style.opacity = 0
+    }
+    </script>
+</body>
+
+</html>

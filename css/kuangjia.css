@@ -1,0 +1,211 @@
+*{margin: 0 auto;
+padding: 0;
+}
+html,body{
+  overflow-x: hidden;
+}
+.top{                                                            /* 头部高60，*/
+	width: 100%;
+	height:60px; 
+	margin: 0 auto;
+}
+.nav{                                                                  /* 导航栏高60，*/
+	width: 100%;
+	height:90px;
+  background-color:  aliceblue;
+
+}
+.banner{                                                                  /* 头部高80，*/
+	width: 100%;
+	height: 550px;
+	margin: 0 auto;
+	background-image: url(../img/王者1200400.jpg) ;
+	background-size: 100%;
+	background-color: #494949;
+	
+}
+.content{                                                                  /* 头部高80，*/
+	height: 600px;
+	width: 100%;
+	margin: 5px auto;
+	overflow: hidden;
+}
+.container{                                                                  /* 头部高80，*/
+	height: 450px;
+	background-color: aliceblue;
+}
+.footer{                                                                  /* 页面底部高120，*/
+	width: 100%;
+	height: 120px;
+	background-color: #FAEBD7;
+	margin: 0 auto;
+}
+
+.top img{                                                               /* 头部图片，*/
+	height: 100%;
+	width: 100%;
+}
+ 
+ 
+ 
+ .logo{                                                                 /* 导航栏标志，*/
+	height: 90px;
+	margin-left: 10px;
+	width: 15%;
+}
+.logo img{                                                                  /* 导航栏logo图片大小，*/
+	width:80%;
+	height:100%;
+}
+.bg{                                                               
+	 margin-top: -90px;                                                   /*内边距，*/
+	 width: 80%;                                                   /*长，*/
+	 height: 90px;                                                   /*宽，0*/
+	 background-color:aliceblue;                                                   /*背景颜色，*/
+ }
+.bg ul{                                                              /* ul标签，*/
+	margin-left:180px;
+	list-style: none;                                                  
+	line-height:90px;                                                    /*背景颜色，*/
+	
+}
+.bg ul li{                                                              /* li标签，*/
+	font-size: 24px;                                                   /*字体大小*/
+	float: left;                                                   /*左浮动*/
+	color: #FF0000;                                                   /*字体颜色，*/
+	display: inline-block;                                                   
+	width: 200px;
+	text-align: center;                                                   /*字体居中，*/
+	border-radius:0px 60px 0px 20px;                                                   /*圆角，*/
+	background-color:#FAEBD7;                                                   /*背景颜色，*/
+}
+.bg ul li a{
+	display: block;
+	width:200px;
+	height:90px;
+	}
+.bg ul li a:link,a；visited{                                                              /* 鼠标滑过，*/
+	color:#858585;
+	 text-decoration:none;
+	 }
+.bg ul li  a:hover{                                                           /* 鼠标滑过，*/
+	text-decoration:none;                                                   /*去下划线，*/
+	color:blue;                                                   /*字体颜色，*/
+	background-color: coral;                                                           /*背景颜色，*/
+	border-radius: 50px;                                                           /* 圆角，*/
+	}
+			
+			
+			
+/* 更多推荐开始 */
+.jphd{
+				height: 40px;
+			}
+.jphd h4{
+				float: left;
+				color: #494949;
+				margin-left: 10px;
+				font-size: 40px;
+}
+.jphd a{
+				float: right;
+				color: #a5a5a5;
+				font-size: 24px;
+				margin-top: 10px;
+				margin-right: 30px;
+			}
+.jphd a:hover {
+				color: #00A4FF;
+			}
+
+
+
+
+/* 下面框 */
+.container-bg ul{
+				margin-left: 120px;
+				width: 100%;
+				height: 380px;
+			}
+.container-bg ul li {
+				width:20%;
+				height: 350px;
+				background-color: #ffffff;
+				overflow: hidden;/* 溢出隐藏 */
+				box-shadow: 0px 4px 5px rgba(0,0,0,0.3);
+				float: left;
+				margin-right: 15px;
+				margin-top:15px;
+				position: relative;
+				border: 1px solid red;
+			}
+.container-bg ul li:hover {
+				top: 5px;
+}
+.container-bg img{
+	height:220px;
+	width: 95%;
+	margin-left: 8px;
+	margin-top:5px ;}			
+.container-bg li p {
+				padding: 0 20px 0 24px;
+				margin-top: 30px;
+				margin-left: 200px;
+			}
+.container-bg li h5 {
+				font-size: 20px;
+				line-height:40px;
+				font-weight: normal;
+				margin-top: 10px;
+				margin-left: 15px;
+			}
+.container-bg li p {
+				font-size: 12px;
+				color:#999;
+			}
+.container-bg li span {
+				color: #00A4FF;
+			}
+			/* 结束 */
+			
+			/*fang*/
+.conter-left{                                                                  /* 头部高80，*/
+	width:60%;
+	height: 600px;
+	background-color: aqua;
+	float: left;
+}
+.conter-left ul{
+	width:20%;
+    height:600px;
+    text-align:center;
+	list-style: none;
+	float: left;
+	background: rgba(0,0,0,0.2);				/* 背景色透明 */
+}
+.conter-left ul li{
+	height:100px;
+}
+.conter-left li a:hover{
+	color:#00a4ff ;
+	width:100%;
+	height: 100px;
+	background-color: #494949;
+}
+.conter-left li a {
+	color: #fff;
+	padding: 0 20px;
+	display: block;					/* 使块具元素转化为行内元素 */
+	line-height:100px;
+}
+.conter-left a span {
+	float: center;
+}
+
+
+
+.conter-right{
+	width: 40%;
+	height: 600px;
+	float: right;
+}
